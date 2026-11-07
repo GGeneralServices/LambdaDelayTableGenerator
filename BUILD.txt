@@ -1,0 +1,25 @@
+LAMBDA DELAY TABLE GENERATOR - building from source
+====================================================
+
+  1. Get the source (clone the repository, or download and unzip it).
+  2. Copy TunerStudioPluginAPI.jar from TunerStudio's lib folder into it.
+  3. Run build.bat (Windows) or build.sh. Needs a Java JDK 8 or newer.
+
+  The build copies README.txt into the jar as the plugin's Help text, and
+  stops if the version in README.txt's first line, VERSION in
+  LambdaDelayPlugin.java and Implementation-Version in manifest.mf don't all
+  match. When you change the plugin, update README.txt and the version
+  numbers together. Keep installing and building instructions out of
+  README.txt: they belong in INSTALL.txt and this file.
+
+  Values you may want to change are in src/com/lambdadelay/Defaults.java:
+  the settings a new session starts with, the Max RPM Trigger "under load"
+  rule, the automatic axis rules (top and bottom MAP points, lowest RPM),
+  the fixed delay kept when estimating higher-MAP rows, the lambda and
+  stoich limits, and the event detection thresholds (including how
+  tolerant the pre-step stability test is).
+  If you change one, update README.txt to match: the build checks that
+  README.txt states them and stops if it doesn't.
+
+  The test folder has the test harnesses used during development (a fake
+  TunerStudio that replays logs through the plugin API).

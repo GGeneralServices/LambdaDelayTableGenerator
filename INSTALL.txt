@@ -1,0 +1,12 @@
+LAMBDA DELAY TABLE GENERATOR - installing, version 2.7
+======================================================
+
+INSTALL OR UPDATE
+  1. In TunerStudio: Tools > TunerStudio Plugins > Add or Update a Plugin,
+     and choose LambdaDelayTableGenerator.jar.
+  2. Restart TunerStudio.
+  3. Open it from Tools > TunerStudio Plugins > Lambda Delay Table Generator.
+  Updating to a new version keeps your saved session.
+
+HOW TO USE IT
+  Press Help in the plugin's top button row.

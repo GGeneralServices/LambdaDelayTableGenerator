@@ -1,0 +1,16 @@
+# Normalise text files in the repository
+* text=auto
+
+# Scripts need their platform's line endings to run
+*.sh  text eol=lf
+*.bat text eol=crlf
+
+*.java text
+*.txt  text
+*.md   text
+*.mf   text
+
+# Binaries
+*.jar binary
+*.mlg binary
+*.ldsession binary

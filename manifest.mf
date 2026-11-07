@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+ApplicationPlugin: com.lambdadelay.LambdaDelayPlugin
+Main-Class: com.lambdadelay.LambdaDelayPlugin
+Class-Path: TunerStudioPluginAPI.jar lib/TunerStudioPluginAPI.jar
+Implementation-Title: Lambda Delay Table Generator
+Implementation-Version: 2.7
+
