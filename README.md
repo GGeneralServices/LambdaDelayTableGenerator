@@ -2,9 +2,7 @@
 
 A [TunerStudio](https://www.tunerstudio.com/) plugin that measures the delay between injector pulse-width steps and the wideband lambda response, live while you drive or from saved logs, and builds a **Lambda Delay** table for TunerStudio's VE Analyze.
 
-VE Analyze needs to know how long a fuelling change takes to show up on the wideband sensor. That delay depends on RPM and load, and guessing it makes VE Analyze correct the wrong cells. This plugin measures it from your own engine.
-
-**Version 2.7** · Java 8 · ECU-agnostic (tested with rusEFI and EpicEFI logs, and Speeduino logs)
+VE Analyze needs to know how long a fuelling change takes to show up on the wideband sensor. That delay depends on RPM, load, and the location of your Wideband 02 sensor. Using the default values makes VE Analyze correct the wrong cells. You should use the default Lambda Delay table to get things close, then generate an accurate Lambda Delay table to get things accurate.
 
 ## Features
 
