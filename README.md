@@ -12,9 +12,9 @@ VE Analyze needs to know how long a fuelling change takes to show up on the wide
 - **Automatic event detection.** Finds pulse-width steps and the lambda response onset. Tip-ins from steady lambda are accepted; throttle closes, fuel-cut entries and exits, clipped or unstable lambda, idle and implausible readings are rejected with a reason. Review any event, move its onset by double-clicking the plot, or accept / reject it by hand.
 - **One session, many drives.** Every live run and log is kept in a session that's saved automatically and reopened next time. Logs can be removed again, duplicates are refused, and sessions can be exported and imported.
 - **Each recording analysed on its own**, at its own sample interval and with its own sensor clipping limits, so adding a log doesn't change the others and the order doesn't matter. Live runs are analysed incrementally, so long drives stay quick.
-- **Automatic table axes** from where the engine actually runs, with the bottom MAP row kept where events can be measured. Optional Max RPM Trigger waits until the full RPM range has been driven under load.
+- **Automatic table axes** from where the engine actually runs, with the bottom MAP row kept where events can be measured. Optional Max RPM Trigger waits until the full RPM range has been driven under load before the table is generated.
 - **Table fill:** measured cells, row medians in crank revolutions, and higher-MAP rows estimated by MAP ratio or copied. Formula fits (delay = a + b / RPM) are shown.
-- **Output:** copy the table for pasting into VE Analyze, or save the table and events as CSV.
+- **Output:** The table is not written directly to TunerStudio. To apply the table you'll need to copy it and pasted it into VE Analyze. You can also export the table and events as CSV.
 
 ## Supported ECUs
 
@@ -65,7 +65,7 @@ The jar is written to `dist/`. The build also checks that the version numbers ma
 
 ## Status
 
-Under active testing. Live collection has been tested against a simulated TunerStudio; testing in TunerStudio 3.2 itself and live on Speeduino and MegaSquirt hardware is still to do. Reports and logs are welcome via [Issues](../../issues).
+Under active testing with EpicEFI hardware. Reports and logs are welcome via [Issues](../../issues).
 
 ## License
 
